@@ -23,5 +23,5 @@ The Google Sheets file can be accessed [here](https://docs.google.com/spreadshee
 ## Data Preprocessing
 A heatmap was created using the dataset in order to find correlations
 
-![image]
+![image](images/heatmap.png)
 
