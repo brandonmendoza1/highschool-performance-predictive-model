@@ -26,4 +26,3 @@ A heatmap was created using the dataset in order to find correlations
 ![image](images/heatmap.png)
 
 Histograms of G1 (first period grade), G2 (second period grade), and G3 (final non-cumulative grade) were made to find outliers, however, none we're found and grade results of 0 are seen to be possible.
-
