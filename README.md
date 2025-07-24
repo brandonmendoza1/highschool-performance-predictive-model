@@ -20,9 +20,22 @@ The original dataset from UCI Machine Learning Repository can be found [here](ht
 
 The Google Sheets file can be accessed [here](https://docs.google.com/spreadsheets/d/1eTmDHrfbaTmuqp3KbAyYYeSISoHYKH3L/edit?usp=sharing&ouid=113841017042122709691&rtpof=true&sd=true)
 
-## Data Preprocessing
+## Dataset Information
+- **Data Preprocessing:**
 A heatmap was created using the dataset in order to find correlations
 
 ![image](images/heatmap.png)
 
 Histograms of G1 (first period grade), G2 (second period grade), and G3 (final non-cumulative grade) were made to find outliers, however, none we're found and grade results of 0 are seen to be possible.
+
+## Models Used
+- **Multiple Linear Regression:**
+  
+- **K-Nearest-Neighbors:**
+  
+- **Decision Trees:**
+
+## Key Findings
+## Tools Used
+## Limitations
+## Future Work
