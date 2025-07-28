@@ -42,6 +42,18 @@ Histograms of G1 (first period grade), G2 (second period grade), and G3 (final n
 - Variables: failures, higher education plans, absences, school type
 
 ## Key Findings
+- Early grades (G1 & G2) are strong predictors
+- Study time, internet access, and parental education matters
+- Social outings and alcohol use can negatively impact performance
 ## Tools Used
+- Excel / XLMiner
+- R (for model comparison)
+- Python (referenvced in comparison studies
 ## Limitations
+- Few strong continuous predictors
+- Overlap between variables (e.g., guardianship statuts)
+- G1, G2, G3 not always clearly defined
 ## Future Work
+- Include more behavioral and psychological predictors
+- Use real-world or international datasets
+- Explore classification models (e.g., pass/fail)
