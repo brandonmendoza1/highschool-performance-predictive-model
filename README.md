@@ -45,6 +45,14 @@ Histograms of G1 (first period grade), G2 (second period grade), and G3 (final n
 - Early grades (G1 & G2) are strong predictors
 - Study time, internet access, and parental education matters
 - Social outings and alcohol use can negatively impact performance
+  
+| hello | hello |
+| --- | --- |
+| goodbye | goodbye |
+- `example`
+```
+python def hello_world(): print hello world
+```
 ## Tools Used
 - Excel / XLMiner
 - R (for model comparison)
