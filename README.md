@@ -33,6 +33,16 @@ Histograms of G1 (first period grade), G2 (second period grade), and G3 (final n
 - Forward, Backward & Stepwise Selection
 - R² up to 33.83%
   
+| Beta Values | R-Squared | P-Values |
+| --- | --- | --- |
+| Y= 7.66 + 0.289x1+ 0.447x2 - 1.541x3 - 0.067x4 + 1.639x5 + 0.884x6- 1.585x7 + 2.046x8
+  |  29.85% of the variation in the target variable is explained by the model.
+ | ... |
+- `example`
+```
+def hello_world(): print ("Hello, World!")
+```
+  
 **K-Nearest-Neighbors:**
 - Tuned with screened variables
 - Best R² ≈ 29%
@@ -45,14 +55,7 @@ Histograms of G1 (first period grade), G2 (second period grade), and G3 (final n
 - Early grades (G1 & G2) are strong predictors
 - Study time, internet access, and parental education matters
 - Social outings and alcohol use can negatively impact performance
-  
-| hello | hello |
-| --- | --- |
-| goodbye | goodbye |
-- `example`
-```
-python def hello_world(): print hello world
-```
+
 ## Tools Used
 - Excel / XLMiner
 - R (for model comparison)
