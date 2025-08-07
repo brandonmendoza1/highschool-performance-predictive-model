@@ -32,6 +32,7 @@ Histograms of G1 (first period grade), G2 (second period grade), and G3 (final n
 **Multiple Linear Regression:**
 - Forward, Backward & Stepwise Selection
 - R² up to 33.83%
+![image](images/MLR_forward_selection.png)
   
 | Beta Values | R-Squared | P-Values |
 | --- | --- | --- |
