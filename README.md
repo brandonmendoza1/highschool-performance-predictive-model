@@ -30,20 +30,31 @@ Histograms of G1 (first period grade), G2 (second period grade), and G3 (final n
 
 ## Models Used
 **Multiple Linear Regression:**
-- Forward, Backward & Stepwise Selection
-- R² up to 33.83%
+
+`Forward Selection` was used for MLR and Including G1 and 2 led to an extremely high R^2 and the goal was to be able to predict G3 without any knowledge of prior performance. Our GOAL: Predict the final grade of a student based on a student’s lifestyle, habits, and environment
+
+`Beta Values` after selecting the best subset, which is selected through observing R2 and Mallow’s cp, were including beta values of fathers education, study time, failures, absences, school support, the sex, and if the student plans to pursue a higher education and an intercept of 7.66 (variables 6 through 8 in the equation use dummy variables 1 and 0) 
+
+The R2 had a result of 0.2985, indicating that 29.85% of the variation in the target variable is explained by the model.
+
+The P-Values displayed are predictors that are statistically significant, as we used forward selection to select best subset of variables
+
+The model provides some predictive value, is statistically valid, and gives directional insights. This could include more contributing variables. However, it is not highly accurate for precise prediction.
+
 ![image](images/MLR_forward_selection.png)
-  
-| Beta Values | R-Squared | P-Values |
-| --- | --- | --- |
-| Y= 7.66 + 0.289x1+ 0.447x2 - 1.541x3 - 0.067x4 + 1.639x5 + 0.884x6- 1.585x7 + 2.046x8
-  |  29.85% of the variation in the target variable is explained by the model.
- | ... |
-- `example`
-```
-def hello_world(): print ("Hello, World!")
-```
-  
+
+`Stepwise Selection` had similar results to forward selection. When looking at the `Beta Values` we have the same variables selected as compared to the forward selection. The linear regression equation includes the beta values for the variables selected after clicking best subset. The noticeable difference would be the intercept of 7.659
+R2: The r2 is 0.2985 suggesting, 29.85% of the variance in the outcome is explained by the model.
+P-values:The p-values displayed are predictors that are statistically significant, as we used forward selection to select best subset of variables and present how these variables have an effect towards the outcome
+Prediction Performance: The model has moderate predictive power. The significant predictors are logically consistent with academic performance drivers like study time, academic failures, and educational aspirations.
+
+![image](images/MLR_backward_selection.png)
+
+Beta Values: after selecting the best subset there was noticeable difference in coefficients and there is an intercept of 10.99 , and 27 variables  that contribute to the linear regression equation. But it was consistent with the previous variables such as fathers education, failures, study time, etc.
+P-Values: The p-values displayed the ones highlighted in red indicate they are not statistically significant and are higher than 0.05, some added variables in this model with a statistically significant p-values include geological address/ location, relationship status, and health status. 
+R2
+Predictive Performance: Key academic and demographic features like study time, academic failures, school, gender, and future education goals—are significant predictors. With a moderate R2. However, this selection method has the lowest RMSE. This would be the best selection method as it also has a higher R2 given more selected variables.
+
 **K-Nearest-Neighbors:**
 - Tuned with screened variables
 - Best R² ≈ 29%
