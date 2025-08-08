@@ -67,6 +67,9 @@ Now that we selected backwards selection due to analyzing the summary of data an
 **K-Nearest-Neighbors:**
 - Tuned with screened variables
 - Best R² ≈ 29%
+![image](images/KNN_screened_variables.png)
+
+![image](images/KNN_screened_cutoffs.png)
   
 **Decision Trees:**
 - Pruned for best accuracy
