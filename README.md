@@ -44,16 +44,17 @@ The model provides some predictive value, is statistically valid, and gives dire
 ![image](images/MLR_forward_selection.png)
 
 `Stepwise Selection` had similar results to forward selection. When looking at the `Beta Values` we have the same variables selected as compared to the forward selection. The linear regression equation includes the beta values for the variables selected after clicking best subset. The noticeable difference would be the intercept of 7.659
-R2: The r2 is 0.2985 suggesting, 29.85% of the variance in the outcome is explained by the model.
-P-values:The p-values displayed are predictors that are statistically significant, as we used forward selection to select best subset of variables and present how these variables have an effect towards the outcome
-Prediction Performance: The model has moderate predictive power. The significant predictors are logically consistent with academic performance drivers like study time, academic failures, and educational aspirations.
+The R² is 0.2985 suggesting, 29.85% of the variance in the outcome is explained by the model.
+
+The `P-Values` displayed are predictors that are statistically significant, as we used forward selection to select best subset of variables and present how these variables have an effect towards the outcome.
+The model has moderate predictive power. The significant predictors are logically consistent with academic performance drivers like study time, academic failures, and educational aspirations.
 
 ![image](images/MLR_backward_selection.png)
 
-Beta Values: after selecting the best subset there was noticeable difference in coefficients and there is an intercept of 10.99 , and 27 variables  that contribute to the linear regression equation. But it was consistent with the previous variables such as fathers education, failures, study time, etc.
-P-Values: The p-values displayed the ones highlighted in red indicate they are not statistically significant and are higher than 0.05, some added variables in this model with a statistically significant p-values include geological address/ location, relationship status, and health status. 
-R2
-Predictive Performance: Key academic and demographic features like study time, academic failures, school, gender, and future education goals—are significant predictors. With a moderate R2. However, this selection method has the lowest RMSE. This would be the best selection method as it also has a higher R2 given more selected variables.
+`Beta Values` after selecting the best subset there was noticeable difference in coefficients and there is an intercept of 10.99 , and 27 variables that contribute to the linear regression equation. But it was consistent with the previous variables such as fathers education, failures, study time, etc.
+The `P-Values` displayed the ones highlighted in red indicate they are not statistically significant and are higher than 0.05, some added variables in this model with a statistically significant p-values include geological address/ location, relationship status, and health status.
+
+Key academic and demographic features like study time, academic failures, school, gender, and future education goals—are significant predictors. With a moderate R². However, this selection method has the lowest `RMSE`. This would be the best selection method as it also has a higher R² given more selected variables.
 
 **K-Nearest-Neighbors:**
 - Tuned with screened variables
