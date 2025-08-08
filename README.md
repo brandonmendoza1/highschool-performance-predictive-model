@@ -58,6 +58,12 @@ Key academic and demographic features like study time, academic failures, school
 
 ![images](images/MLR_stepwise_selection.png)
 
+**Checking Assumptions**
+
+Now that we selected backwards selection due to analyzing the summary of data and having lowest RMSE. The histogram of residuals suggests that they are normally distributed. We continued to check assumptions. The scatter plot  is of the residuals over fitted grade, it suggests that the independence assumption is met, as residuals are randomly scattered. However, homoscedasticity is violated, with residual variance decreasing as predicted values increase, indicating potential issues with unequal error spread.
+
+![image](images/assumptions.png)
+
 **K-Nearest-Neighbors:**
 - Tuned with screened variables
 - Best R² ≈ 29%
