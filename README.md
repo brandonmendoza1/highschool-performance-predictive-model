@@ -56,6 +56,8 @@ The `P-Values` displayed the ones highlighted in red indicate they are not stati
 
 Key academic and demographic features like study time, academic failures, school, gender, and future education goals—are significant predictors. With a moderate R². However, this selection method has the lowest `RMSE`. This would be the best selection method as it also has a higher R² given more selected variables.
 
+![images](images/MLR_stepwise_selection.png)
+
 **K-Nearest-Neighbors:**
 - Tuned with screened variables
 - Best R² ≈ 29%
