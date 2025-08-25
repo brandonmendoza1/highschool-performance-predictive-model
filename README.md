@@ -6,7 +6,7 @@ The primary objective of this project is to explore which factors influence acad
 This project uses statistical analysis and machine learning techniques to uncover actionable insights and trends in student behavior and achievement.
 ## Insights and analysis were conducted across the following key areas:
 - **Academic Performance Modeling:**
-Use of Multiple Linear Regression (MLR), k-Nearest Neighbors (kNN), and Regression Trees to predict final grades (G3).
+Use of Multiple Linear Regression (MLR), k-Nearest Neighbors (kNN), and Regression Trees to identify the most significant factors regarding final grades (G3).
 - **Feature Significance:**
 Identification of important factors such as study time, parental education, academic failures, internet access, and aspirations for higher education.
 - **Data Preprocessing & Cleaning:**
