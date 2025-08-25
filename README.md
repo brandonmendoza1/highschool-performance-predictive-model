@@ -76,13 +76,14 @@ Now that we selected backwards selection due to analyzing the summary of data an
 - Best R² ≈ 29%
 ![image](images/KNN_screened_variables.png)
 
-
-
 ![image](images/KNN_screened_cutoffs.png)
   
 **Decision Trees:**
 - Pruned for best accuracy
 - Variables: failures, higher education plans, absences, school type
+
+R² of .3383 outperformed both stepwise and forward models in fit and prediction accuracy. Most effective model overall. CHOSEN FOR KNN
+!
 
 ## Key Findings
 - Early grades (G1 & G2) are strong predictors
