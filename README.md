@@ -71,19 +71,46 @@ Now that we selected backwards selection due to analyzing the summary of data an
 
 ![image](images/assumptions.png)
 
-**K-Nearest-Neighbors:**
+**K-Nearest-Neighbors: Screened Variables**
 - Tuned with `screened variables` and three seperate correlation cutoff values.
 - Best R² ≈ 29%
 ![image](images/KNN_screened_variables.png)
 
 ![image](images/KNN_screened_cutoffs.png)
-  
-**Decision Trees:**
-- Pruned for best accuracy
-- Variables: failures, higher education plans, absences, school type
 
-R² of .3383 outperformed both stepwise and forward models in fit and prediction accuracy. Most effective model overall. CHOSEN FOR KNN
-!
+**K-Nearest-Neighbors: MLR Selection**  
+- `Backward Selection ` is chosen for kNN as the most effective model with a R² of .3383
+- Outperforming both stepwise and forward models in fit and prediction accuracy.
+![image](images/kNN_variables_from_MLR.png)
+![image](images/kNN_MLR_var_backward.png)
+
+**Regression Trees: Best Pruned Tree**
+
+Pruned for **best accuracy**
+- `Parameters`: Standard XLMiner parameters used (Maximum number of levels = 7).
+- `Limits`: No additional limits were placed because sample size is small.
+- `Variables`: Failures, higher educatuion plans, absences, and school GPA.
+![image](images/tree_prediction_summary.png)
+- `Abnormality`: R² is **higher** on validation than on training. RMSE is **lower** on validation than on training.
+- `Interpretation`:
+
+Left branch of failures (no failures)
+Left branch of higher (no higher education, 0) → G3 = 9.79
+Right branch of higher (yes higher education)
+Left branch of school (school MS - Mousinho da Silveira, 0) → G3 = 11.71 
+Right branch of school (school GP - Gabriel Pereira, 1) → G3 = 13.11
+Right branch of failures (more than 1 failure)
+Left branch of absences (no absences, 0) → G3 = 6 
+Right branch of absences (one or more absence, 1) → G3 = 9.35 
+
+**Regression Trees: Minimum Error Tree**
+Pruned to have the **lowest error rate**
+- `Parameters`: Standard XLMiner parameters used (Maximum number of levels = 7).
+- `Limits`: No additional limits were placed because sample size is small.
+- `Variables`: Failures.
+![image](images/min_error_tree_chart.png)
+
+
 
 ## Key Findings
 - Early grades (G1 & G2) are strong predictors
