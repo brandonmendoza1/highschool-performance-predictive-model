@@ -51,12 +51,19 @@ The model has moderate predictive power. The significant predictors are logicall
 
 ![image](images/MLR_backward_selection.png)
 
-`Beta Values` after selecting the best subset there was noticeable difference in coefficients and there is an intercept of 10.99 , and 27 variables that contribute to the linear regression equation. But it was consistent with the previous variables such as fathers education, failures, study time, etc.
+The `Beta Values` for `Backward Selection` after selecting had a noticeable difference in coefficients and an intercept of 10.99 and 27 variables that contribute to the linear regression equation. But it was consistent with the previous variables: fathers education, failures and study time.
 The `P-Values` displayed the ones highlighted in red indicate they are not statistically significant and are higher than 0.05, some added variables in this model with a statistically significant p-values include geological address/ location, relationship status, and health status.
 
-Key academic and demographic features like study time, academic failures, school, gender, and future education goals—are significant predictors. With a moderate R². However, this selection method has the lowest `RMSE`. This would be the best selection method as it also has a higher R² given more selected variables.
+Key academic and demographic features like study time, academic failures, school, gender, and future education goals are significant predictors. This selection method has the lowest `RMSE` and a moderate R². This would be the best selection method as it also has a higher R² given more selected variables.
 
 ![images](images/MLR_stepwise_selection.png)
+
+`Stepwise Selection` had similar results to forward selection. The key differences were the `beta values` had the same variables selected as compared to the forward selection. The linear regression equation includes the beta values for the variables selected after clicking best subset. The noticeable difference would be the intercept of 7.659
+
+The `R²` is 0.2985 suggesting, 29.85% of the variance in the outcome is explained by the model.
+The `P-Values` displayed are predictors that are statistically significant, as we used forward selection to select best subset of variables and present how these variables have an effect towards the outcome
+The model has **moderate predictive power**. The significant predictors are logically consistent with academic performance drivers like study time, academic failures, and educational aspirations.
+
 
 **Checking Assumptions**
 
@@ -65,9 +72,11 @@ Now that we selected backwards selection due to analyzing the summary of data an
 ![image](images/assumptions.png)
 
 **K-Nearest-Neighbors:**
-- Tuned with screened variables
+- Tuned with `screened variables` and three seperate correlation cutoff values.
 - Best R² ≈ 29%
 ![image](images/KNN_screened_variables.png)
+
+
 
 ![image](images/KNN_screened_cutoffs.png)
   
