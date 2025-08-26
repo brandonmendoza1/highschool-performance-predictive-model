@@ -110,7 +110,13 @@ Pruned to have the **lowest error rate**
 - `Variables`: Failures.
 ![image](images/min_error_tree_chart.png)
 
+**Camparisons Considered**
+Three seperate student performance prediction studies were considered to compare our results.
+- [Study #1](https://rpubs.com/Shuhxian123/1137519)
+- [Study #2](https://rpubs.com/krithiha/709739)
+- [Study #3](https://medium.com/@brianhulela/using-k-nearest-neighbors-for-student-performance-regression-fd5c58155c06)
 
+The results of the three studies are consistent with our original study, while considering each respective discrepency and similarities per study.
 
 ## Key Findings
 - Early grades (G1 & G2) are strong predictors.
@@ -126,6 +132,10 @@ Pruned to have the **lowest error rate**
 - Overlap between variables (e.g., guardianship status).
 - G1, G2, G3 are not always clearly defined.
 ## Future Work
-- Include more behavioral and psychological predictors
-- Use real-world or international datasets
-- Explore classification models (e.g., pass/fail)
+- **Include more behavioral and psychological predictors**
+- **Use real-world or international datasets**
+- **Explore classification models (e.g., pass/fail)**
+- Although our model performed moderately well within this dataset, it’s essential to test whether it works in other settings. This is where external validation comes in. By applying the model to new data whether from another school, region, or even year, we check if its predictive power performs well and appropriately.
+This helps us determine if the factors we’ve identified are genuinely impactful or just specific to this sample.
+- To address unresolved questions, include additional predictors
+- These relevant predictors could look like psychological and behavioral factors such as providing stress levels. Sleep patterns and average screen time per day can be insightful to a student’s performance. Socioeconomic details, although we were provided variables regarding family and parents occupations, could be insightful to be provided with household income amount.
