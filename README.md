@@ -113,18 +113,18 @@ Pruned to have the **lowest error rate**
 
 
 ## Key Findings
-- Early grades (G1 & G2) are strong predictors
-- Study time, internet access, and parental education matters
-- Social outings and alcohol use can negatively impact performance
-
+- Early grades (G1 & G2) are strong predictors.
+- MLR, Regression Trees, and kNN using Backward MLR or kNN with screened variables (-.1/.1) lead to our best models.
+- Study time, internet access, and parental education level matters.
+- Social outings and alcohol use can negatively impact performance (parental social behavior are significant factors).
 ## Tools Used
 - Excel / XLMiner
 - R (for model comparison)
 - Python (referenvced in comparison studies
 ## Limitations
-- Few strong continuous predictors
-- Overlap between variables (e.g., guardianship statuts)
-- G1, G2, G3 not always clearly defined
+- Few strong continuous predictors.
+- Overlap between variables (e.g., guardianship status).
+- G1, G2, G3 are not always clearly defined.
 ## Future Work
 - Include more behavioral and psychological predictors
 - Use real-world or international datasets
