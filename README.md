@@ -111,12 +111,13 @@ Pruned to have the **lowest error rate**
 ![image](images/min_error_tree_chart.png)
 
 **Camparisons Considered**
+
 Three seperate student performance prediction studies were considered to compare our results.
 - [Study #1](https://rpubs.com/Shuhxian123/1137519)
 - [Study #2](https://rpubs.com/krithiha/709739)
 - [Study #3](https://medium.com/@brianhulela/using-k-nearest-neighbors-for-student-performance-regression-fd5c58155c06)
 
-The results of the three studies are consistent with our original study, while considering each respective discrepency and similarities per study.
+The results of the three studies are consistent with our original study, while considering each respective discrepency and similarities.
 
 ## Key Findings
 - Early grades (G1 & G2) are strong predictors.
