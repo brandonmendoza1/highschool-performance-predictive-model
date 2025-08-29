@@ -31,9 +31,9 @@ Histograms of G1 (first period grade), G2 (second period grade), and G3 (final n
 ## Models Used
 **Multiple Linear Regression:**
 
-`Forward Selection` was used for MLR and Including G1 and 2 led to an extremely high R^2 and the goal was to be able to predict G3 without any knowledge of prior performance. Our GOAL: Predict the final grade of a student based on a student’s lifestyle, habits, and environment
+`Forward Selection` was used for MLR and Including G1 and G2 led to an extremely high R² and the goal was to be able to predict G3 without any knowledge of prior performance. Our goal in particular was to predict the final grade of a student based on a student’s lifestyle, habits, and environment
 
-`Beta Values` after selecting the best subset, which is selected through observing R2 and Mallow’s cp, were including beta values of fathers education, study time, failures, absences, school support, the sex, and if the student plans to pursue a higher education and an intercept of 7.66 (variables 6 through 8 in the equation use dummy variables 1 and 0) 
+`Beta Values` after selecting the best subset, which is selected through observing R² and Mallow’s cp, were including beta values of fathers education, study time, failures, absences, school support, the sex, and if the student plans to pursue a higher education and an intercept of 7.66 (variables 6 through 8 in the equation use dummy variables 1 and 0) 
 
 The R2 had a result of 0.2985, indicating that 29.85% of the variation in the target variable is explained by the model.
 
