@@ -126,8 +126,8 @@ The results of the three studies are consistent with our original study, while c
 - Social outings and alcohol use can negatively impact performance (parental social behavior are significant factors).
 ## Tools Used
 - Excel / XLMiner
-- R (for model comparison)
-- Python (referenvced in comparison studies
+- R (referenced for model comparison)
+- Python (referenced in comparison studies)
 ## Limitations
 - Few strong continuous predictors.
 - Overlap between variables (e.g., guardianship status).
